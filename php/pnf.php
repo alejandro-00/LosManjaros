@@ -23,18 +23,19 @@ FROM
 	news
 ORDER BY
 	NEW_ID DESC
-LIMIT 2 ");
+LIMIT 8 ");
 $prueba->execute();
 $resultados = $prueba->get_result();
+
 	$respuesta = [];
 	while ($fila = $resultados->fetch_assoc()) {
 		$resultadoQue = [
-			'TITULO' => $fila['TITULO'],
+			'LINK' => $fila['LINK'],
 			'IMG' => $fila['IMG']
 		];
 		array_push($respuesta, $resultadoQue);
 		}
 	}
-	print_r($respuesta);
+	//print_r($respuesta);
 	echo json_encode($respuesta);
 ?>

@@ -3,16 +3,31 @@ $(document).ready(function() {
     $('#subm').click(function(){
 
     	var form =  document.getElementById("formSignUp");
+      var firstname = document.getElementById('firstname').value;
+      var lastname = document.getElementById('lastname').value;
+      var correo = document.getElementById("correo").value;
+      var nick_name = document.getElementById("usuario").value;
+      var password = document.getElementById("password").value;
+      var password2 = document.getElementById("password2").value;
+      var genero = document.getElementById("genero").value;
 
-        var dataString = $('#formSignUp').serialize();
-        dataString = dataString + "&submit=submit";
 
+                  var USUARIO = {
+                    "NICK_NAME": nick_name,
+                    "FNAME": firstname,
+                    "LNAME": lastname,
+                    "E_MAIL": correo,
+                    "PSWD": password,
+                    "GENDER": genero,
+                    "ID_PERFIL": '2',
+                  };
+                  var data = JSON.stringify(USUARIO);
 
         if(validacion() == true){
         $.ajax({
             type: "POST",
             url: "signup.php",
-            data: dataString,
+            data: {x : data},
             success: function(datos) {
 
             }
@@ -24,53 +39,6 @@ $(document).ready(function() {
 
 
 });
-
-function ajax_comprobacion_correo(correo) {
-    var result = 0;
-    $.ajax({
-      url:"signupmail.php",
-      data: "security=true",
-      type:  "POST",
-      async: false,
-      success:function(data){
-         		for(i=0; i<data.length; i++){
-
-			if(data[i].correo == correo){
-				result = 1;
-			}
-
-				}
-      }
-   });
-   return result;
-}
-
-
-
-function ajax_comprobacion_user(user,correo) {
-  var USUARIO = {
-    "user": user,
-    "correo": correo
-  };
-  var data = JSON.stringify(USUARIO);
-    var result = 0;
-    $.ajax({
-      url:"signupuser.php",
-      data: {x: data},
-      type:  "POST",
-      async: false,
-      success:function(data){
-         		for(i=0; i<data.length; i++){
-
-			if(data[i].username == user){
-				result = 1;
-			}
-
-				}
-      }
-   });
-   return result;
-}
 
 
 function validacion(){

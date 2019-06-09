@@ -3,9 +3,29 @@ $( document ).ready(function() {
 var container_3_images = document.getElementById('container-3-images');
 var container_1_image = document.getElementById('container-1-image');
 var container_4_images = document.getElementById('container-4-images');
-  $.get("php/pnf.php", function(datos,status){
-    console.log(datos);
+  $.get("php/pnf.php", function(datos){
+    var a1=document.createElement('a');
+
+    a1.setAttribute('href',datos[1].LINK)
+    var a2=document.createElement('a');
+    a2.setAttribute('href',datos[2].LINK)
+    var a3=document.createElement('a');
+    a3.setAttribute('href',datos[3].LINK)
+    var a4=document.createElement('a');
+    a4.setAttribute('href',datos[3].LINK)
+    var a5=document.createElement('a');
+    a5.setAttribute('href',datos[4].LINK)
+    var a6=document.createElement('a');
+    a6.setAttribute('href',datos[5].LINK)
+    var a7=document.createElement('a');
+    a7.setAttribute('href',datos[6].LINK)
+    var a8=document.createElement('a');
+    a8.setAttribute('href',datos[7].LINK)
+
+
+
     var div_3_1_image = document.createElement('div');
+
     div_3_1_image.className = 'col-4 p-0';
     var image_3_1 = document.createElement('img');
     image_3_1.className = 'img-responsive img-fluid';
@@ -21,17 +41,22 @@ var container_4_images = document.getElementById('container-4-images');
     image_3_3.className = 'img-responsive img-fluid';
     image_3_3.setAttribute('src', datos[3].IMG);
 
-    container_3_images.appendChild(div_3_1_image);
+    container_3_images.appendChild(a1);
+    a1.appendChild(div_3_1_image);
     div_3_1_image.appendChild(image_3_1);
-    container_3_images.appendChild(div_3_2_image);
+    a2.appendChild(div_3_2_image);
+    container_3_images.appendChild(a2);
+    a2.appendChild(div_3_2_image);
     div_3_2_image.appendChild(image_3_2);
-    container_3_images.appendChild(div_3_3_image);
+    container_3_images.appendChild(a3);
+    a3.appendChild(div_3_3_image);
     div_3_3_image.appendChild(image_3_3);
 
     var image_1_1 = document.createElement('img');
     image_1_1.className = 'img-responsive img-fluid img-central-large';
     image_1_1.setAttribute('src', datos[0].IMG);
     container_1_image.appendChild(image_1_1);
+    container_1_image.setAttribute('onclick',"window.location="+datos[0].LINK)
 
     var card_4_1 = document.createElement('div');
     card_4_1.className = 'card';

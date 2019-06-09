@@ -78,11 +78,11 @@ if(ajax_login_validacion() == true){
                 }
                 }
 
-                if(datos == '1'){
+                if(datos == '3'){
                   inicioExitosoAdmin();
-                }else if(datos == '3'){
+                }else if(datos == '1'){
                   inicioExitosoUsuario();
-                }else if(datos == '4'){
+                }else if(datos != '3' && != '1'){
                   inicioNoExitoso();
                 }
               }
