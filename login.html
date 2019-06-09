@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/login_style.css">
+  <title>Iniciar sesión</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 navbar-style d-flex align-items-center">
+        <img src="resources/logo.jpg" class="ml-2">
+      </div>
+    </div>
+    <div class="row d-flex align-items-center justify-content-center row-sup-m">
+      <div class="col-12 d-flex justify-content-center">
+        <h2 class="login-font">Iniciar sesión</h2>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-4 container-style-center p-1">
+        <form id="formLogin">
+          <div class="form-group">
+            <input type="email" class="placeholder-class-font form-control" id="email-input" aria-describedby="email-input" placeholder="Ingresa tu correo">
+          </div>
+          <div class="form-group">
+            <input type="password" class="placeholder-class-font form-control" id="password-input" placeholder="Ingresa tu contraseña">
+          </div>
+          <div class="col-12 p-0">
+          <button type="button" onclick="ajax_login_validacion()" class="m-0 mb-2 col-12 btn btn-elegant">Ingresar</button>
+          </div>
+          <div class="col-12" id="container">
+
+          </div>
+        </form>
+      </div>
+      <div class="col-12 mt-2">
+        <a href="register.html" class="placeholder-class-font d-flex justify-content-center">Registrarse</a>
+        <a href="index.html" class="placeholder-class-font d-flex justify-content-center">Continuar sin usuario</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="javascript/ajax_login.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

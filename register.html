@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/login_style.css">
+  <title>Registrar usuario</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 navbar-style d-flex align-items-center">
+        <img src="resources/logo.jpg" class="ml-2">
+      </div>
+    </div>
+    <div class="row d-flex align-items-center justify-content-center row-sup-r">
+      <div class="col-12 d-flex justify-content-center">
+        <h2 class="login-font">Registrar usuario</h2>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-8 col-md-6 col-lg-4 container-style-center p-2">
+        <form id="formSignUp">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="placeholder-class-font form-control" placeholder="First name" id="firstname">
+            </div>
+            <div class="col">
+              <input type="text" class="placeholder-class-font form-control" placeholder="Last name" id="lastname">
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="placeholder-class-font form-control" id="usuario" aria-describedby="text-input" placeholder="Ingresa un nickname">
+          </div>
+          <div class="form-group">
+            <input type="email" class="placeholder-class-font form-control" id="correo" aria-describedby="email-input" placeholder="Ingresa un correo">
+          </div>
+          <div class="form-group">
+            <input type="password" class="placeholder-class-font form-control" id="password" placeholder="Ingresa una contraseña">
+          </div>
+          <div class="form-group">
+            <input type="password" class="placeholder-class-font form-control" id="password2" placeholder="Repite la contraseña">
+          </div>
+          <div class="form-group">
+            <label for="genero" class="text-muted">Género</label>
+            <select id="genero" class="form-control">
+              <option selected disabled class="text-muted">Selecciona un género</option>
+              <option class="text-muted">Hombre</option>
+              <option class="text-muted">Mujer</option>
+              <option class="text-muted">Otro</option>
+            </select>
+          </div>
+          <div class="mb-2">
+            <button type="button" class="col-12 btn btn-elegant mb-1" id="subm">Registrar</button>
+          </div>
+          <div class="col-12" id="cont-send"></div>
+        </div>
+        </form>
+
+      <div class="col-12 mt-2 mb-3">
+        <a href="login.html" class="placeholder-class-font d-flex justify-content-center">Iniciar sesión</a>
+        <a href="index.html" class="placeholder-class-font d-flex justify-content-center">Continuar sin usuario</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="javascript/ajax-signup.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Statistic</title>
+	    <link rel="stylesheet" type="text/css" href="css/dc.css">
+	    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style-stadistic.css">
+        <link rel="stylesheet" type="text/css" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 p-0">
+			<img src="resources/background/chart-background.jpg" class="img-fluid img-header">	
+		</div>
+		<div class="col-12 mt-4 text-center">
+			<h4 class="">S T A T I S T I C</h4>
+			<h6 class="text-proyect">Proyecto de Jesús Rodríguez</h6>
+		</div>
+	</div>
+
+	<div class="row mt-3 d-flex justify-content-center">
+		<div class="col-sm-12 col-lg-4 d-flex">
+			<div class="col-sm-12 p-2 text-center animation-cont">
+				<h6 class="icon-chart-pie"><b>Audiencia</b></h6>
+				<span>Comprender a la audiencia juega un papel importante para el crecimiento de cualquier proyecto.</span>
+			</div>
+		</div>
+		<div class="col-sm-12 col-lg-4 d-flex">
+			<div class="col-sm-12 p-2 text-center animation-cont">
+				<h6 class="icon-chart-bar"><b>Alcance</b></h6>
+				<span>El alcance nos permite conocer las altas y bajas de nuestro tráfico en la web, además, también es útil para conocer el por qué de estas.</span>
+			</div>
+		</div>
+		<div class="col-sm-12 col-lg-4 d-flex">
+			<div class="col-sm-12 p-2 text-center animation-cont">
+				<h6 class="icon-chart-line"><b>Datos</b></h6>
+				<span>Todo los datos recopilados son de mi proyecto personal: <b>QUERY</b></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mt-4">
+		<div class="col-sm-12 p-2 text-center text-white contenedor-introduccion d-flex align-items-center">
+			<span>La estadística impacta prácticamente en todos los aspectos de nuestra vida diaria pues a partir de todas nuestras actividades es posible recopilar datos que después de ser analizados nos permiten tomar mejores decisiones ampliando nuestro panorama.
+			Es por esta razón que he decidido recopilar los datos más importantes sobre el tráfico de mi página para poder tener
+			una mejor visión sobre lo que pasa además de que estos datos me ayuden en la toma de decisiones.</span>
+		</div>
+	</div>
+
+	<div class="row mt-5">
+		<div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+			<div class="col-sm-12 p-2">
+				<h3 class="icon-chart-pie animation-icon-aud text-center mt-2"><b>Audiencia</b></h3>
+			
+				<span class="text-justify">Gracias a los datos recopilados sobre los usuarios que se registraron en la página es que pudimos llegar a la conclusión de que hay más hombres que mujeres registrados aunque la diferencia no demuestra ser mucha.</span>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-8 p-3">
+			<canvas id="myChart" class="img-fluid"></canvas>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-8 p-3">
+			<canvas id="myChart2" class="img-fluid"></canvas>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+			<span class="text-justify">La filosofía de <b>Query</b> es el anonimato ya que de esta manera puede resultar más sencillo expresarse o comunicar una idea, sin embargo, hay personas que decidieron salir del anonimato mostrando su identidad. En esta gráfica se puede observar a los usuarios que mostrando su identidad hicieron más preguntas frente a la inmensa mayoría que decidió permanecer en el anonimato.
+			</span>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">	
+			<span class="text-justify">Como podemos observar en la gráfica anterior, son pocas las personas que decidieron mostrar quienes eran en realidad y esta gráfica tan sólo reafirma lo que ya sabemos.
+			</span>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-8 p-3">
+			<canvas id="myChart3" class="img-fluid"></canvas>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-8 p-3">
+			<canvas id="myChart4" class="img-fluid"></canvas>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+			<div class="col-sm-12 p-2">
+				<h3 class="icon-chart-bar animation-icon-alc text-center"><b>Alcance</b></h3>
+			<span class="text-justify">Esta gráfica demuestra que el día en que se recibieron más preguntas en la página fue el mismo día en el que la página fue abierta y publicada logrando así un mayor alcance hasta que con el tiempo el tráfico de la página empezó a disminuir.
+			</span>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+			<span class="text-justify">Por último, el propósito de esta gráfica es el de mostrar la cantidad de preguntas que hay almacenadas en la base de datos hasta la fecha, contra las preguntas que ya he contestado.
+			</span>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-8 p-3">
+			<canvas id="myChart5" class="img-fluid"></canvas>
+		</div>
+	</div>
+	<hr>
+</div>
+
+<div class="container-fluid mt-5">
+	<div class="row port-style">
+		<div class="col-sm-12 col-md-6 d-flex align-items-center">
+			<div class="col-sm-12 p-2">
+				<h4 class="text-proyect-footer text-center"><b>¡Conoce mis otros proyectos!</b></h4>
+				<span class="text-justify">Recuerda que si te registras, inicias sesión, haces preguntas o visitas la página estás apoyando para tener datos de mejor calidad y así poder realizar gráficas más avanzadas para este proyecto.</span>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6  d-flex align-items-start p-0">
+			<div class="col-sm-4 animation-proyect-infoteca p-0 d-flex align-items-center justify-content-center">
+				<img src='../resources/port/infoteca.png' class='img-fluid'>
+			</div>
+			<div class="col-sm-4 animation-proyect-query p-0 d-flex align-items-center justify-content-center">
+				<a href="../Query/index.php"><img src='../resources/port/query.png' class='img-fluid'></a>
+			</div>
+			<div class="col-sm-4 animation-proyect-blog p-0 d-flex align-items-center justify-content-center">
+				<img src='../resources/port/BLOG.png' class='img-fluid'>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="ajax4.js"></script>
+<script type="text/javascript" src="js/d3.js"></script>
+<script type="text/javascript" src="js/crossfilter.js"></script>
+<script type="text/javascript" src="js/dc.js"></script>
+<script type="text/javascript" src="js/leaflet.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Imports */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+    color: #6c757d;
+}
+/* Custom-Fonts */
+@font-face {
+font-family: "Qontra";
+src: url("Qontra.otf");
+}
+/* */
+body{
+	background: #e1dada;  /* fallback for old browsers */
+}
+.navbar-style{
+  height: 60px;
+  background: black;
+}
+/* Font-Style */
+.logo-style{
+	font-family: "Qontra";
+	color: white;
+}
+.label-cipw-font, .placeholder-class-font, .placeholder-class-button{
+	font-family: 'Segoe UI Webfont';
+}
+.label-cipw-font{
+	color: white;
+}
+/* Buttons */
+.form-control{
+border-radius: 0px;
+background: transparent;
+border: 1px solid white;
+transition: all 1s;
+color: black;
+}
+.placeholder-class-button:hover{
+color: #6c757d;
+border-radius: 2px;
+background: white;
+border: 1px solid transparent;
+}
+/* Containers-style */
+.container-style-center{
+	border-top: 1px solid #6c757d;
+	border-bottom: 1px solid #6c757d;
+}
+/* Custom-row */
+.row-sup-m{
+	margin-top: 12vh;
+}
+.row-sup-r{
+	margin-top: 5vh;
+}
+/* Custom-fonts */
+.login-font{
+	font-family: 'Lato', 'sans-serif';
+}
+/* Custom-alerts */
+.alerta-error{
+  border-radius: 2px;
+  font-size: 14px;
+  background: #C13232;
+  border: 1px solid #AC1E1E;
+  color: #fff;
+}
+.alert-success{
+  background: #76aa60;
+  border: 1px solid #85a573;
+  color: white;
+
+}
+/* Dispositivo sm */
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 550px) {
+}
+@media screen and (max-width: 450px) {
+}
+@media screen and (max-width: 248px) {
+}
